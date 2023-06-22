@@ -181,6 +181,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="ariatab.cpp" />
     <ClCompile Include="asn.cpp" />
@@ -195,12 +199,20 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="blake2b_simd.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-msse4.1 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="blowfish.cpp" />
     <ClCompile Include="blumshub.cpp" />
@@ -223,6 +235,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="channels.cpp" />
     <ClCompile Include="cmac.cpp" />
@@ -232,6 +248,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-msse4.2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-msse4.2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-msse4.2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-msse4.2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-msse4.2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-msse4.2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-msse4.2 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="darn.cpp" />
     <ClCompile Include="default.cpp" />
@@ -268,6 +288,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mssse3 -mpclmul %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mssse3 -mpclmul %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mssse3 -mpclmul %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mssse3 -mpclmul %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mssse3 -mpclmul %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mssse3 -mpclmul %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mssse3 -mpclmul %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="gf256.cpp" />
     <ClCompile Include="gf2_32.cpp" />
@@ -277,6 +301,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mpclmul %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mpclmul %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mpclmul %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mpclmul %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mpclmul %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mpclmul %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mpclmul %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="gfpcrypt.cpp" />
     <ClCompile Include="gost.cpp" />
@@ -301,6 +329,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="lea.cpp" />
     <ClCompile Include="lea_simd.cpp">
@@ -308,6 +340,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="lsh256.cpp" />
     <ClCompile Include="lsh256_sse.cpp">
@@ -315,12 +351,20 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="lsh256_avx.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="lsh512.cpp" />
     <ClCompile Include="lsh512_sse.cpp">
@@ -328,12 +372,20 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="lsh512_avx.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mavx2 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="luc.cpp" />
     <ClCompile Include="mars.cpp" />
@@ -374,6 +426,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-maes -msse4.1 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-maes -msse4.1 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-maes -msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-maes -msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-maes -msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-maes -msse4.1 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-maes -msse4.1 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="ripemd.cpp" />
     <ClCompile Include="rng.cpp" />
@@ -391,6 +447,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="sha3.cpp" />
     <ClCompile Include="shacal2.cpp" />
@@ -399,6 +459,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-msse4.2 -msha %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="shake.cpp" />
     <ClCompile Include="shark.cpp" />
@@ -410,6 +474,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="simple.cpp" />
     <ClCompile Include="skipjack.cpp" />
@@ -420,6 +488,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mssse3 -maes %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mssse3 -maes %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mssse3 -maes %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mssse3 -maes %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mssse3 -maes %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mssse3 -maes %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mssse3 -maes %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="sosemanuk.cpp" />
     <ClCompile Include="speck.cpp" />
@@ -428,6 +500,10 @@
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|x64'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='DLL-Import Debug|Win32'">-mssse3 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="square.cpp" />
     <ClCompile Include="squaretb.cpp" />
