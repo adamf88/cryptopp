@@ -282,6 +282,55 @@ distclean :: clean
 	$(RMDIR) ipch\ /q /s 2>nul
 !ENDIF
 
+!IF "$(CXX)" == "clang-cl.exe"
+SSSE3_FLAG = -mssse3
+SSE41_FLAG = -msse4.1
+SSE42_FLAG = -msse4.2
+AVX2_FLAG = -mavx2
+CLMUL_FLAG = -mpclmul
+AESNI_FLAG = -maes
+SHANI_FLAG = -msha
+ARIA_FLAG = $(SSSE3_FLAG)
+BLAKE2B_FLAG = $(SSE41_FLAG)
+BLAKE2S_FLAG = $(SSE41_FLAG)
+CHACHA_AVX2_FLAG = $(AVX2_FLAG)
+CHAM_FLAG = $(SSSE3_FLAG)
+CRC_FLAG = $(SSE42_FLAG)
+GCM_FLAG = $(SSSE3_FLAG) $(CLMUL_FLAG)
+GF2N_FLAG = $(CLMUL_FLAG)
+KECCAK_FLAG = $(SSSE3_FLAG)
+LEA_FLAG = $(SSSE3_FLAG)
+LSH256_FLAG = $(SSSE3_FLAG)
+LSH256_AVX2_FLAG = $(AVX2_FLAG)
+LSH512_SSE_FLAG = $(SSSE3_FLAG)
+LSH512_AVX2_FLAG = $(AVX2_FLAG)
+AES_FLAG = $(SSE41_FLAG) $(AESNI_FLAG)
+SHA_FLAG = $(SSE42_FLAG) $(SHANI_FLAG)
+SIMON128_FLAG = $(SSSE3_FLAG)
+SPECK128_FLAG = $(SSSE3_FLAG)
+SM4_FLAG = $(SSSE3_FLAG) $(AESNI_FLAG)
+!ELSE
+ARIA_FLAG = 
+BLAKE2B_FLAG = 
+BLAKE2S_FLAG = 
+CHACHA_AVX2_FLAG = 
+CHAM_FLAG = 
+CRC_FLAG = 
+GCM_FLAG = 
+GF2N_FLAG = 
+KECCAK_FLAG = 
+LEA_FLAG = 
+LSH256_FLAG = 
+LSH256_AVX2_FLAG = 
+LSH512_SSE_FLAG = 
+LSH512_AVX2_FLAG = 
+AES_FLAG = 
+SHA_FLAG = 
+SIMON128_FLAG = 
+SPECK128_FLAG = 
+SM4_FLAG = 
+!ENDIF
+
 # Precompiled header
 pch.pch: pch.h pch.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) /Yc"pch.h" /Fp"pch.pch" /c pch.cpp
@@ -293,6 +342,49 @@ dll.obj: dll.h dll.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) /Y- /c dll.cpp
 rdrand.obj: rdrand.h rdrand.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) /c rdrand.cpp
+
+
+aria_simd.obj: aria_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(ARIA_FLAG) /c aria_simd.cpp
+blake2b_simd.obj: blake2b_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(BLAKE2B_FLAG) /c blake2b_simd.cpp
+blake2s_simd.obj: blake2s_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(BLAKE2S_FLAG) /c blake2s_simd.cpp
+chacha_avx.obj: chacha_avx.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(CHACHA_AVX2_FLAG) /c chacha_avx.cpp
+cham_simd.obj: cham_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(CHAM_FLAG) /c cham_simd.cpp
+crc_simd.obj: crc_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(CRC_FLAG) /c crc_simd.cpp
+gcm_simd.obj: gcm_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(GCM_FLAG) /c gcm_simd.cpp
+gf2n_simd.obj: gf2n_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(GF2N_FLAG) /c gf2n_simd.cpp
+keccak_simd.obj: keccak_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(KECCAK_FLAG) /c keccak_simd.cpp
+lea_simd.obj: lea_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(LEA_FLAG) /c lea_simd.cpp
+lsh256_sse.obj: lsh256_sse.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(LSH256_FLAG) /c lsh256_sse.cpp
+lsh256_avx.obj: lsh256_avx.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(LSH256_AVX2_FLAG) /c lsh256_avx.cpp
+lsh512_sse.obj: lsh512_sse.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(LSH512_SSE_FLAG) /c lsh512_sse.cpp
+lsh512_avx.obj: lsh512_avx.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(LSH512_AVX2_FLAG) /c lsh512_avx.cpp
+rijndael_simd.obj: rijndael_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(AES_FLAG) /c rijndael_simd.cpp
+sha_simd.obj: sha_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(SHA_FLAG) /c sha_simd.cpp
+shacal2_simd.obj: shacal2_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(SHA_FLAG) /c shacal2_simd.cpp
+simon128_simd.obj: simon128_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(SIMON128_FLAG) /c simon128_simd.cpp
+speck128_simd.obj: speck128_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(SPECK128_FLAG) /c speck128_simd.cpp
+sm4_simd.obj: sm4_simd.cpp
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) $(SM4_FLAG) /c sm4_simd.cpp
+
 
 # Built for x86/x64
 rdrand-x86.obj: rdrand.asm
