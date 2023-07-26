@@ -156,7 +156,7 @@ static const SignalHandler<SIGTRAP, false> s_dummyHandler;
 
 int scoped_main(int argc, char *argv[])
 {
-#ifdef _CRTDBG_LEAK_CHECK_DF
+#if defined(_CRTDBG_LEAK_CHECK_DF) && defined(CRYPTOPP_DEBUG)
 	// Turn on leak-checking
 	int tempflag = _CrtSetDbgFlag( _CRTDBG_REPORT_FLAG );
 	tempflag |= _CRTDBG_LEAK_CHECK_DF;
