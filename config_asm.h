@@ -102,7 +102,6 @@
 // 32-bit SunCC does not enable SSE2 by default.
 #if !defined(CRYPTOPP_DISABLE_SSE2) && (defined(CRYPTOPP_MSC_VERSION) || CRYPTOPP_GCC_VERSION >= 30300 || defined(__SSE2__) || (__SUNPRO_CC >= 0x5100))
 	#define CRYPTOPP_SSE2_INTRIN_AVAILABLE 1
-# endif
 #endif
 
 #if !defined(CRYPTOPP_DISABLE_SSSE3)
