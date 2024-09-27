@@ -42,18 +42,6 @@ public:
 // classes as specified in PKCS #1 v2.0 and P1363a
 // SHA1, SHA224, SHA256, SHA384, SHA512, Tiger, RIPEMD160, MD2, MD5
 
-#if defined(CRYPTOPP_IS_DLL)
-CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA1>;
-CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA224>;
-CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA256>;
-CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA384>;
-CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA512>;
-// http://github.com/weidai11/cryptopp/issues/517
-CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA3_256>;
-CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA3_384>;
-CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA3_512>;
-#endif
-
 // https://github.com/weidai11/cryptopp/issues/300 and
 // https://github.com/weidai11/cryptopp/issues/533
 #if defined(__clang__)
@@ -80,6 +68,18 @@ template<> const byte PKCS_DigestDecoration<Weak1::MD2>::decoration[];
 template<> const unsigned int PKCS_DigestDecoration<Weak1::MD2>::length;
 template<> const byte PKCS_DigestDecoration<Weak1::MD5>::decoration[];
 template<> const unsigned int PKCS_DigestDecoration<Weak1::MD5>::length;
+#endif
+
+#if defined(CRYPTOPP_IS_DLL)
+CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA1>;
+CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA224>;
+CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA256>;
+CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA384>;
+CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA512>;
+// http://github.com/weidai11/cryptopp/issues/517
+CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA3_256>;
+CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA3_384>;
+CRYPTOPP_DLL_TEMPLATE_CLASS PKCS_DigestDecoration<SHA3_512>;
 #endif
 
 /// \brief PKCS #1 v1.5 Signature Encoding Scheme
